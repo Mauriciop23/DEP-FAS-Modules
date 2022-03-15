@@ -1,0 +1,174 @@
+.navbar img{
+    width: 70px;
+}
+
+.login-card{
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-card img{
+    width: 200px;
+}
+
+.login-card h2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.login-card h5{
+    margin-bottom: 40px;
+}
+
+.login-form{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-form .login-input{
+background-color: #AFC4CF;
+border-radius: 10px;
+border: none;
+margin-bottom: 15px;
+
+font-weight: 900;
+}
+
+.login-form .login-input:focus{
+    background-color: white;
+    color: #5E889E;
+}
+
+.login-form .login-btn{
+    background-color: #5E889E;
+    border-radius: 10px;
+    border: none;
+    transition: 0.25s;
+    }
+
+
+.login-footer{
+
+}
+
+
+.login-footer .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-size: 1280px 100px;
+    pointer-events: none;
+    transition: 0.3s;
+    
+}
+
+.login-footer .wave.points{
+    animation: animateWave 30s linear infinite; 
+    z-index: -1;
+    opacity: 0.3;
+    animation-delay: 0s;
+    bottom: 0;
+    background: url(/src/img/Points.svg);
+    transition: 0.5s;
+    height: 200px;
+
+}
+
+.login-footer .wave.wave1{
+    animation: animateWave 30s linear infinite; 
+    z-index: 3;
+    opacity: 0.5;
+    animation-delay: 0s;
+    bottom: 0;
+    background: url(/src/img/Waves/Wave.svg);
+    transition: 0.5s;
+
+}
+
+.login-footer  .wave.wave2{
+    animation: animateWave2 15s linear infinite;
+    z-index: 2; 
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 0px;
+    background: url(/src/img/Waves/Wave.svg);
+
+}
+
+.login-footer  .wave.wave3{
+    animation: animateWave2 30s linear infinite;
+    z-index: 1; 
+    opacity: 0.5;
+    animation-delay: -2s;
+    bottom: 0;
+    background: url(/src/img/Waves/Wave.svg);
+    transition: 0.5s;
+}
+
+.container:hover .login-btn{
+    background-color: #00002D;
+    
+}
+
+.login-form .login-btn:hover{
+    background-color: #DF851B;
+}
+
+
+.container:hover .wave1{
+    opacity: 0.8;
+    height: 90px;
+    background: url(/src/img/Waves/WaveBlue.svg);
+}
+
+.container:hover .wave2{
+    opacity: 0.8;
+    height: 110px;
+    background: url(/src/img/Waves/WaveGold.svg);
+}
+
+.container:hover .wave3{
+    opacity: 0.8;
+    height: 115px;
+    background: url(/src/img/Waves/WaveWine.svg);
+}
+
+
+.login-form .login-input:focus  .login-card img{
+    width: 20px;
+}
+
+
+@keyframes animateWave {
+    0%{
+        background-position-x: 0;
+    }
+
+    100%{
+        background-position-x: 1280px;
+    }
+}
+
+@keyframes animateWave2 {
+    0%{
+        background-position-x: 0;
+    }
+
+    100%{
+        background-position-x: -1280px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .login-card{
+        width: 100%;
+    }
+  }
+
+ 
